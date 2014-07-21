@@ -13,6 +13,9 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
+hypothesis = X * theta;
+cf_temp = (hypothesis - y).^2;
+J = sum(cf_temp)/(2*m);
 
 
 
