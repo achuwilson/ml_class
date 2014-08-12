@@ -18,9 +18,9 @@ for iter = 1:num_iters
     %
 
 
+    hypothesis = X* theta;
 
-
-
+    theta = theta - alpha*((1/m)*(X'*(hypothesis-y)));
 
 
 
